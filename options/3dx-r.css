@@ -1,0 +1,37 @@
+/*
+ * 3DX Reverse
+ */
+.hamburger--3 dx - r.hamburger - box {
+    -webkit - perspective: 80 px;
+    perspective: 80 px;
+}
+
+.hamburger--3 dx - r.hamburger - inner {
+        transition: background - color 0 s 0.1 s cubic - bezier(0.645, 0.045, 0.355, 1),
+        -webkit - transform 0.2 s cubic - bezier(0.645, 0.045, 0.355, 1);
+        transition: transform 0.2 s cubic - bezier(0.645, 0.045, 0.355, 1),
+        background - color 0 s 0.1 s cubic - bezier(0.645, 0.045, 0.355, 1);
+        transition: transform 0.2 s cubic - bezier(0.645, 0.045, 0.355, 1),
+        background - color 0 s 0.1 s cubic - bezier(0.645, 0.045, 0.355, 1),
+        -webkit - transform 0.2 s cubic - bezier(0.645, 0.045, 0.355, 1);
+    }
+    .hamburger--3 dx - r.hamburger - inner::before, .hamburger--3 dx - r.hamburger - inner::after {
+        transition: -webkit - transform 0 s 0.1 s cubic - bezier(0.645, 0.045, 0.355, 1);
+        transition: transform 0 s 0.1 s cubic - bezier(0.645, 0.045, 0.355, 1);
+        transition: transform 0 s 0.1 s cubic - bezier(0.645, 0.045, 0.355, 1),
+        -webkit - transform 0 s 0.1 s cubic - bezier(0.645, 0.045, 0.355, 1);
+    }
+
+.hamburger--3 dx - r.is - active.hamburger - inner {
+        background - color: transparent; -
+        webkit - transform: rotateY(-180 deg);
+        transform: rotateY(-180 deg);
+    }
+    .hamburger--3 dx - r.is - active.hamburger - inner::before {
+        -webkit - transform: translate3d(0, 10 px, 0) rotate(45 deg);
+        transform: translate3d(0, 10 px, 0) rotate(45 deg);
+    }
+    .hamburger--3 dx - r.is - active.hamburger - inner::after {
+        -webkit - transform: translate3d(0, -10 px, 0) rotate(-45 deg);
+        transform: translate3d(0, -10 px, 0) rotate(-45 deg);
+    }

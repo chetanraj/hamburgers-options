@@ -1,0 +1,22 @@
+{
+  "name": "hamburgers-options",
+  "description": "lot og hamburgers",
+  "main": "app.js",
+  "authors": [
+    "@chetan_raj"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css"
+  ],
+  "homepage": "https://github.com/chetanraj/hamburgers-options",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
