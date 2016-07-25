@@ -3,8 +3,6 @@
 
 > A command-line wrapper for [hamburgers](https://github.com/jonsuh/hamburgers)
 
-
-
 ```js
 npm install hamburgers-options -g
 ```
@@ -29,4 +27,4 @@ $ hamburgers-options <option>
 $ hamburgers-options arrow
 ```
 
-> The particular CSS of the hamburger 🍔 will be copied to the clipboard.
+> The particular CSS of the hamburger 🍔&nbsp;will be copied to the clipboard.

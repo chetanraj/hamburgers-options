@@ -15,20 +15,18 @@ if (option.length) {
     console.log("CSS copied to clipboard " + emoji.get('smiley'));
 
     // TO-D0 File Not Found [Sad Smiley]
+} else {
+    inquirer.prompt([{
+        type: 'list',
+        name: 'option',
+        message: 'What do you want to do?',
+        choices: [
+            'Open the webpage to select the hamburger ' + emoji.get('hamburger'),
+            'Know thy option ' + emoji.get('sunglasses')
+        ]
+    }, ]).then(function(answers) {
+        if (answers.option == "Open the webpage to select the hamburger 🍔") {
+            opener('http://www.google.com');
+        }
+    });
 }
-
-inquirer.prompt([
-  {
-    type: 'list',
-    name: 'option',
-    message: 'What do you want to do?',
-    choices: [
-      'Open the webpage to select the hamburger ' + emoji.get('hamburger'),
-      'Know thy option ' + emoji.get('sunglasses')
-    ]
-  },
-]).then(function (answers) {
-  if(answers.option == "Open the webpage to select the hamburger 🍔") {
-    opener('http://www.google.com');
-  }
-});
