@@ -29,5 +29,5 @@
   },
   "bin": {
     "hamburgers-options": "./bin/hamburgers-options"
-  },
+  }
 }
