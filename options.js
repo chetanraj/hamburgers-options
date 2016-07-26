@@ -8,8 +8,8 @@ var opener = require('opener');
 var option = process.argv.slice(2);
 
 if (option.length) {
-    var base = fs.readFileSync('options/base.css', 'utf8');
-    var css = fs.readFileSync('options/' + option + '.css', 'utf8');
+    var base = fs.readFileSync(__dirname + '/options/base.css', 'utf8');
+    var css = fs.readFileSync(__dirname + '/options/' + option + '.css', 'utf8');
     ncp.copy(base + css);
 
     console.log("CSS copied to clipboard " + emoji.get('smiley'));
@@ -26,7 +26,7 @@ if (option.length) {
         ]
     }, ]).then(function(answers) {
         if (answers.option == "Open the webpage to select the hamburger 🍔") {
-            opener('http://www.google.com');
+            opener('http://chetanraj.in/hamburgers-options');
         }
     });
 }

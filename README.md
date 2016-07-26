@@ -1,5 +1,4 @@
 # hamburgers-options
----
 
 > A command-line wrapper for [hamburgers](https://github.com/jonsuh/hamburgers)
 
